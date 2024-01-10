@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "replicas" %}{% endblock title %}
+{% block header %}{% endblock header %}
+{% block content %}
+<h2>{% trans "replicas" %}</h2>
+<p><a href="{% url 'replica_create'%}">{% trans "Add" %}</a></p>
+<hr>
+{% if replica.count > 0 %}
+<div class="row">
+	<table id="myTable" class="table-manager" style="width:100%">
+		<thead>
+			<tr>
+				<th>
+					<p>{% trans "replica_manufacturer" %}</p>
+				</th>
+				<th>
+					<p>{% trans "replica_kind" %}</p>
+				</th>
+				<th>
+					<p>{% trans "replica_title" %}</p>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for p in replica %}
+			<tr>
+				<td>
+					<p>{{ p.manufacturer }}</p>					
+				</td>
+				<td>
+					<p>{{ p.kind }}</p>					
+				</td>
+				<td>
+					<p>{{ p.title }}</p>
+					<p>
+						<a href="{% url 'replica_edit' p.id %}">{% trans "Change" %}</a> |
+						<a href="{% url 'replica_read' p.id %}">{% trans "View" %}</a> |
+						<a onclick="return confirm('Удалить запись?')" href="{% url 'replica_delete' p.id %}">{% trans "Delete" %}</a>
+					</p>
+				</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+{% else %}
+<a href="{% url 'replica_create'%}">{% trans "Add" %}</a>
+{% endif %}
+{% endblock content %}
+

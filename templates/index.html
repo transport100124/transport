@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block title %}{% trans "App Name" %}{% endblock title %}
+{% block header %}
+
+{% endblock header %}
+{% block content %}
+
+<style>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 10px;
+}
+.text-center {
+  text-align: center;
+  text-color: Gold;
+  margin: 1px;
+  padding: 5px;
+  height: 200px;
+  background-color: DarkMagenta;
+}
+.text-center h3{
+  color: Gold;  
+}
+.text-center p{
+  color: Gold;  
+}
+</style>
+
+<div class="div-width-100-text-center">
+	<h1>Грузоперевозки</h1>
+</div>
+<div class="row" style="margin-top: 10px">
+	<div class="col-md-6">
+		<div class="center">
+			<h2>Качественные услуги по транспортировке, складированию и экспедированию грузов.</h2>			
+		</div>
+		<h3><a class="nav-link" href="{% url 'application_create' %}">Подать заявку</a></h3>
+	</div>
+	<div class="col-md-6">
+		<img class="img-center" src="{% static 'images/index1.jpg' %}" alt="images">
+	</div>
+</div>
+<hr>
+<div class="div-width-100-text-center">
+	<h1>Наши преимущества</h1>
+</div>
+<div class="row" style="margin-top: 10px">
+	<div class="col-md-4">
+		<div class="text-center">
+			<h3>АКТУАЛЬНОЕ ЦЕНООБРАЗОВАНИЕ</h3>
+			<p>Наработанная база поставщиков позволяет предоставлять нашим клиентам актуальные цены. Скидки для постоянных клиентов.</p>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="text-center">
+			<h3>ОТСЛЕЖИВАНИЕ В РЕАЛЬНОМ ВРЕМЕНИ</h3>
+			<p>Проработанные маршруты, с рекомендуемыми остановками. Уточнение местоположения дважды в день.</p>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="text-center">
+			<h3>ДОСТАВКА "ТОЧНО-В-СРОК"</h3>
+			<p>Строгое соблюдение сроков доставки. Ежедневная сверка с графиком и своевременное оповещение клиентов.</p>
+		</div>
+	</div>
+</div>
+<hr>
+<div class="div-width-100-text-center">
+	<h1>Мы предлагаем</h1>
+</div>
+<div class="row" style="margin-top: 10px">
+	<div class="col-md-3">
+		<h3>Международные автоперевозки</h3>
+		<p>Автомобильные грузоперевозки по странам СНГ, Восточной Европы и Азии.</p>
+	</div>
+	<div class="col-md-3">
+		<img class="img-center" src="{% static 'images/index3.jpg' %}" alt="images">
+	</div>
+	<div class="col-md-3">
+		<img class="img-center" src="{% static 'images/index5.jpg' %}" alt="images">
+	</div>
+	<div class="col-md-3">
+		<h3>Обслуживание контейнеров</h3>
+		<p>Предоставление в аренду, покупка и продажа 20’ и 40’ контейнеров.</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-3">
+		<h3>Железнодорожные перевозки</h3>
+		<p>Мультимодальные перевозки из стран Азии в Казахстан. Возврат порожних контейнеров.</p>
+	</div>
+	<div class="col-md-3">
+		<img class="img-center" src="{% static 'images/index2.jpg' %}" alt="images">
+	</div>
+	<div class="col-md-3">
+		<img class="img-center" src="{% static 'images/index4.jpg' %}" alt="images">
+	</div>
+	<div class="col-md-3">
+		<h3>Международные авиаперевозки</h3>
+		<p>Авиаперевозки из Казахстана в страны Европы и Азии.</p>
+	</div>
+</div>
+{% endblock content %}
+

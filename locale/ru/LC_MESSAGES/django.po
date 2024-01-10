@@ -1,0 +1,398 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-10 09:22+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+#: .\shipping\forms.py:29 .\shipping\forms.py:72 .\shipping\models.py:33
+#: .\templates\manufacturer\index.html:15
+msgid "manufacturer_title"
+msgstr "Название"
+
+#: .\shipping\forms.py:49 .\shipping\forms.py:73 .\shipping\models.py:44
+#: .\templates\kind\index.html:15
+msgid "kind_title"
+msgstr "Название"
+
+#: .\shipping\forms.py:101
+msgid "Minimum age 18 years old"
+msgstr "Минимальный возраст 18 лет"
+
+#: .\shipping\forms.py:103 .\shipping\forms.py:147 .\shipping\forms.py:156
+#: .\shipping\forms.py:165 .\shipping\forms.py:206
+msgid "Wrong date and time format"
+msgstr "Неправильный формат даты и времени"
+
+#: .\shipping\forms.py:119 .\templates\automobile\index.html:15
+#: .\templates\replica\create.html:5 .\templates\replica\edit.html:5
+#: .\templates\replica\read.html:5
+msgid "replica"
+msgstr "Модель автомобиля"
+
+#: .\shipping\forms.py:120 .\templates\automobile\index.html:24
+#: .\templates\automobile\read.html:16 .\templates\driver\create.html:5
+#: .\templates\driver\edit.html:5 .\templates\driver\read.html:5
+msgid "driver"
+msgstr "Водитель"
+
+#: .\shipping\forms.py:139 .\templates\automobile\create.html:5
+#: .\templates\automobile\edit.html:5 .\templates\automobile\read.html:5
+#: .\templates\waybill\index.html:21
+msgid "automobile"
+msgstr "Автомобиль"
+
+#: .\shipping\models.py:57 .\templates\replica\index.html:21
+msgid "replica_title"
+msgstr "Название модели"
+
+#: .\shipping\models.py:58 .\templates\replica\read.html:16
+msgid "capacity"
+msgstr "Вместимость"
+
+#: .\shipping\models.py:70 .\templates\driver\index.html:15
+msgid "full_name"
+msgstr "ФИО"
+
+#: .\shipping\models.py:71 .\templates\driver\index.html:18
+#: .\templates\driver\read.html:12
+msgid "birthday"
+msgstr "Дата рождения"
+
+#: .\shipping\models.py:72 .\templates\driver\index.html:21
+#: .\templates\driver\read.html:13
+msgid "phone"
+msgstr "Телефон"
+
+#: .\shipping\models.py:73 .\templates\driver\index.html:24
+#: .\templates\driver\read.html:16
+msgid "category"
+msgstr "Водительская категория"
+
+#: .\shipping\models.py:91 .\templates\automobile\index.html:18
+#: .\templates\automobile\read.html:13
+msgid "yr"
+msgstr "Год выпуска"
+
+#: .\shipping\models.py:92 .\templates\automobile\index.html:21
+msgid "reg_number"
+msgstr "Госномер"
+
+#: .\shipping\models.py:104 .\templates\waybill\index.html:15
+msgid "datew"
+msgstr "Дата"
+
+#: .\shipping\models.py:105 .\templates\waybill\index.html:18
+#: .\templates\waybill\read.html:10
+msgid "numb"
+msgstr "Номер"
+
+#: .\shipping\models.py:107 .\templates\waybill\read.html:20
+msgid "start"
+msgstr "Начало поездки"
+
+#: .\shipping\models.py:108 .\templates\waybill\read.html:21
+msgid "finish"
+msgstr "Завершение поездки"
+
+#: .\shipping\models.py:109 .\templates\waybill\index.html:24
+#: .\templates\waybill\read.html:14
+msgid "whence"
+msgstr "Откуда"
+
+#: .\shipping\models.py:110 .\templates\waybill\index.html:27
+#: .\templates\waybill\read.html:15
+msgid "where"
+msgstr "Куда"
+
+#: .\shipping\models.py:111
+msgid "waybill_details"
+msgstr "Детали"
+
+#: .\shipping\models.py:140 .\templates\application\index.html:12
+#: .\templates\application\list.html:18
+msgid "datea"
+msgstr "Дата заявки"
+
+#: .\shipping\models.py:142
+msgid "application_title"
+msgstr "Тема заявки"
+
+#: .\shipping\models.py:143
+msgid "application_details"
+msgstr "Детали заявки"
+
+#: .\shipping\models.py:162 .\templates\application\read.html:24
+#: .\templates\movement\index.html:18 .\templates\movement\read.html:14
+msgid "datem"
+msgstr "Дата"
+
+#: .\shipping\models.py:163
+msgid "movement_status"
+msgstr "Статус"
+
+#: .\shipping\models.py:164
+msgid "movement_details"
+msgstr "Детали"
+
+#: .\shipping\models.py:182 .\templates\news\index.html:14
+msgid "daten"
+msgstr "Дата"
+
+#: .\shipping\models.py:183
+msgid "news_title"
+msgstr "Заголовок"
+
+#: .\shipping\models.py:184
+msgid "news_details"
+msgstr "Детали"
+
+#: .\shipping\models.py:185
+msgid "news_photo"
+msgstr "Фотография"
+
+#: .\templates\application\create.html:3 .\templates\movement\create.html:3
+#: .\templates\news\create.html:3
+msgid "Create"
+msgstr "Создать"
+
+#: .\templates\application\create.html:5 .\templates\application\edit.html:5
+#: .\templates\application\read.html:5 .\templates\movement\create.html:6
+#: .\templates\movement\edit.html:6 .\templates\movement\index.html:6
+msgid "application"
+msgstr "Заявка"
+
+#: .\templates\application\create.html:12 .\templates\application\edit.html:12
+#: .\templates\automobile\create.html:12 .\templates\automobile\edit.html:12
+#: .\templates\driver\create.html:12 .\templates\driver\edit.html:12
+#: .\templates\kind\create.html:12 .\templates\kind\edit.html:12
+#: .\templates\manufacturer\create.html:12
+#: .\templates\manufacturer\edit.html:12 .\templates\movement\create.html:18
+#: .\templates\movement\edit.html:18 .\templates\news\create.html:13
+#: .\templates\news\edit.html:13 .\templates\replica\create.html:12
+#: .\templates\replica\edit.html:12 .\templates\waybill\create.html:12
+#: .\templates\waybill\edit.html:12
+msgid "Save"
+msgstr "Сохранить"
+
+#: .\templates\application\create.html:13 .\templates\application\edit.html:13
+#: .\templates\application\read.html:45 .\templates\automobile\create.html:13
+#: .\templates\automobile\edit.html:13 .\templates\automobile\read.html:21
+#: .\templates\driver\create.html:13 .\templates\driver\edit.html:13
+#: .\templates\driver\read.html:21 .\templates\kind\create.html:13
+#: .\templates\kind\edit.html:13 .\templates\kind\read.html:18
+#: .\templates\manufacturer\create.html:13
+#: .\templates\manufacturer\edit.html:13 .\templates\manufacturer\read.html:18
+#: .\templates\movement\create.html:19 .\templates\movement\edit.html:19
+#: .\templates\movement\index.html:46 .\templates\movement\read.html:31
+#: .\templates\news\create.html:14 .\templates\news\edit.html:14
+#: .\templates\news\read.html:29 .\templates\replica\create.html:13
+#: .\templates\replica\edit.html:13 .\templates\replica\read.html:21
+#: .\templates\waybill\create.html:13 .\templates\waybill\edit.html:13
+#: .\templates\waybill\read.html:26
+msgid "Back"
+msgstr "Назад"
+
+#: .\templates\application\edit.html:3 .\templates\application\index.html:31
+#: .\templates\automobile\edit.html:3 .\templates\automobile\index.html:40
+#: .\templates\driver\edit.html:3 .\templates\driver\index.html:34
+#: .\templates\kind\edit.html:3 .\templates\kind\index.html:25
+#: .\templates\manufacturer\edit.html:3 .\templates\manufacturer\index.html:25
+#: .\templates\movement\edit.html:3 .\templates\movement\index.html:32
+#: .\templates\news\edit.html:3 .\templates\news\index.html:27
+#: .\templates\replica\edit.html:3 .\templates\replica\index.html:37
+#: .\templates\waybill\edit.html:3 .\templates\waybill\index.html:40
+msgid "Change"
+msgstr "Изменить"
+
+#: .\templates\application\index.html:3 .\templates\application\index.html:6
+#: .\templates\application\list.html:3 .\templates\application\list.html:7
+#: .\templates\base.html:69 .\templates\base.html:73
+msgid "applications"
+msgstr "Заявки"
+
+#: .\templates\application\index.html:13
+msgid "user"
+msgstr "Пользователь"
+
+#: .\templates\application\index.html:14 .\templates\application\read.html:15
+#: .\templates\news\index.html:15
+msgid "title"
+msgstr "Заголовок"
+
+#: .\templates\application\index.html:15 .\templates\application\read.html:19
+#: .\templates\movement\create.html:11 .\templates\movement\edit.html:11
+#: .\templates\movement\index.html:3 .\templates\movement\index.html:11
+msgid "movement"
+msgstr "Движение заявки"
+
+#: .\templates\application\index.html:32 .\templates\application\list.html:35
+#: .\templates\automobile\index.html:41 .\templates\automobile\read.html:3
+#: .\templates\driver\index.html:35 .\templates\driver\read.html:3
+#: .\templates\kind\index.html:26 .\templates\kind\read.html:3
+#: .\templates\manufacturer\index.html:26 .\templates\manufacturer\read.html:3
+#: .\templates\movement\index.html:33 .\templates\news\index.html:28
+#: .\templates\replica\index.html:38 .\templates\replica\read.html:3
+#: .\templates\waybill\index.html:41 .\templates\waybill\read.html:3
+msgid "View"
+msgstr "Просмотреть"
+
+#: .\templates\application\index.html:33 .\templates\automobile\index.html:42
+#: .\templates\driver\index.html:36 .\templates\kind\index.html:27
+#: .\templates\manufacturer\index.html:27 .\templates\movement\index.html:34
+#: .\templates\news\index.html:29 .\templates\replica\index.html:39
+#: .\templates\waybill\index.html:42
+msgid "Delete"
+msgstr "Удалить"
+
+#: .\templates\application\index.html:37
+msgid "movements"
+msgstr "Движения заявки"
+
+#: .\templates\application\list.html:11 .\templates\automobile\create.html:3
+#: .\templates\automobile\index.html:7 .\templates\automobile\index.html:54
+#: .\templates\driver\create.html:3 .\templates\driver\index.html:7
+#: .\templates\driver\index.html:54 .\templates\kind\create.html:3
+#: .\templates\kind\index.html:7 .\templates\kind\index.html:36
+#: .\templates\manufacturer\create.html:3
+#: .\templates\manufacturer\index.html:7
+#: .\templates\manufacturer\index.html:36 .\templates\movement\index.html:12
+#: .\templates\news\index.html:7 .\templates\news\index.html:38
+#: .\templates\replica\create.html:3 .\templates\replica\index.html:7
+#: .\templates\replica\index.html:48 .\templates\waybill\create.html:3
+#: .\templates\waybill\index.html:7 .\templates\waybill\index.html:60
+msgid "Add"
+msgstr "Добавить"
+
+#: .\templates\application\list.html:19 .\templates\application\read.html:16
+#: .\templates\movement\index.html:20 .\templates\movement\read.html:22
+#: .\templates\waybill\read.html:16
+msgid "details"
+msgstr "Детали"
+
+#: .\templates\application\read.html:3 .\templates\movement\read.html:3
+#: .\templates\news\read.html:4
+msgid "Read"
+msgstr "Просмотреть"
+
+#: .\templates\application\read.html:25 .\templates\movement\index.html:19
+#: .\templates\movement\read.html:18
+msgid "status"
+msgstr "Статус"
+
+#: .\templates\automobile\index.html:3 .\templates\automobile\index.html:6
+#: .\templates\base.html:66
+msgid "automobiles"
+msgstr "Автомобили"
+
+#: .\templates\base.html:44
+msgid "Home"
+msgstr "Начало"
+
+#: .\templates\base.html:46 .\templates\base.html:71
+#: .\templates\news\create.html:6 .\templates\news\edit.html:6
+#: .\templates\news\read.html:7
+msgid "news"
+msgstr "Новости"
+
+#: .\templates\base.html:49 .\templates\contact.html:8
+msgid "Contacts"
+msgstr "Контакты"
+
+#: .\templates\base.html:62 .\templates\manufacturer\index.html:3
+#: .\templates\manufacturer\index.html:6
+msgid "manufacturers"
+msgstr "Производители"
+
+#: .\templates\base.html:63 .\templates\kind\index.html:3
+#: .\templates\kind\index.html:6
+msgid "kinds"
+msgstr "Типы кузова"
+
+#: .\templates\base.html:64 .\templates\replica\index.html:3
+#: .\templates\replica\index.html:6
+msgid "replicas"
+msgstr "Модели"
+
+#: .\templates\base.html:65 .\templates\driver\index.html:3
+#: .\templates\driver\index.html:6
+msgid "drivers"
+msgstr "Водители"
+
+#: .\templates\base.html:67 .\templates\waybill\index.html:3
+#: .\templates\waybill\index.html:6
+msgid "waybills"
+msgstr "Путевые листы"
+
+#: .\templates\base.html:76
+msgid "My account"
+msgstr "Моя учетная запись"
+
+#: .\templates\base.html:77
+msgid "Change password"
+msgstr "Сменить пароль"
+
+#: .\templates\base.html:79
+msgid "Log out"
+msgstr "Выход"
+
+#: .\templates\base.html:84
+msgid "Log In"
+msgstr "Вход"
+
+#: .\templates\base.html:85
+msgid "Sign up"
+msgstr "Регистрация"
+
+#: .\templates\index.html:4 .\templates\registration\logged_out.html:4
+#: .\templates\registration\login.html:4
+#: .\templates\registration\password_change_done.html:3
+#: .\templates\registration\password_change_form.html:3
+#: .\templates\registration\password_reset_complete.html:4
+#: .\templates\registration\password_reset_confirm.html:4
+#: .\templates\registration\password_reset_done.html:4
+#: .\templates\registration\password_reset_form.html:4
+#: .\templates\registration\register_done.html:4
+msgid "App Name"
+msgstr "Transport"
+
+#: .\templates\kind\create.html:5 .\templates\kind\edit.html:5
+#: .\templates\kind\read.html:5
+msgid "kind"
+msgstr "Тип кузова"
+
+#: .\templates\manufacturer\create.html:5 .\templates\manufacturer\edit.html:5
+#: .\templates\manufacturer\read.html:5
+msgid "manufacturer"
+msgstr "Производители"
+
+#: .\templates\news\index.html:3 .\templates\news\index.html:6
+#: .\templates\news\list.html:4 .\templates\news\list.html:8
+msgid "newss"
+msgstr "Новости"
+
+#: .\templates\replica\index.html:15
+msgid "replica_manufacturer"
+msgstr "Производитель"
+
+#: .\templates\replica\index.html:18
+msgid "replica_kind"
+msgstr "Тип кузова"
+
+#: .\templates\waybill\create.html:5 .\templates\waybill\edit.html:5
+#: .\templates\waybill\read.html:5
+msgid "waybill"
+msgstr "Путевой лист"

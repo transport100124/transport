@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "waybills" %}{% endblock title %}
+{% block header %}{% endblock header %}
+{% block content %}
+<h2>{% trans "waybills" %}</h2>
+<p><a href="{% url 'waybill_create'%}">{% trans "Add" %}</a></p>
+<hr>
+{% if waybill.count > 0 %}
+<div class="row">
+	<table id="myTable" class="table-manager" style="width:100%">
+		<thead>
+			<tr>
+				<th>
+					<p>{% trans "datew" %}</p>
+				</th>
+				<th>
+					<p>{% trans "numb" %}</p>
+				</th>
+				<th>
+					<p>{% trans "automobile" %}</p>
+				</th>
+				<th>
+					<p>{% trans "whence" %}</p>
+				</th>
+				<th>
+					<p>{% trans "where" %}</p>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for p in waybill %}
+			<tr>
+				<td>
+					<p>{{ p.datew | date:"d.m.Y" }}</p>					
+				</td>
+				<td>
+					<p>{{ p.numb }}</p>	
+					<p>
+						<a href="{% url 'waybill_edit' p.id %}">{% trans "Change" %}</a> |
+						<a href="{% url 'waybill_read' p.id %}">{% trans "View" %}</a> |
+						<a onclick="return confirm('Удалить запись?')" href="{% url 'waybill_delete' p.id %}">{% trans "Delete" %}</a>
+					</p>					
+				</td>
+				<td>
+					<p>{{ p.automobile }}</p>					
+				</td>
+				<td>
+					<p>{{ p.whence }}</p>					
+				</td>
+				<td>
+					<p>{{ p.where }}</p>					
+				</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+{% else %}
+<a href="{% url 'waybill_create'%}">{% trans "Add" %}</a>
+{% endif %}
+{% endblock content %}
+

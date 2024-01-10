@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "View" %}{% endblock title %}
+{% block content %}
+<h2>{% trans "waybill" %}</h2>
+<div class="row justify-content-center">
+	<div class="card" style="width:100%">
+		<div class="card-header">	
+			<h5>{{ waybill.datew | date:"d.m.Y" }}</h6>		
+			<p><strong>{% trans "numb" %}: </strong>{{ waybill.numb }}</p>		
+		</div>
+		<div class="card-body">
+			<h4>{{ waybill.automobile }}</h4>			
+			<p><strong>{% trans "whence" %}: </strong>{{ waybill.whence }}</p>	
+			<p><strong>{% trans "where" %}: </strong>{{ waybill.where }}</p>
+			<p><strong>{% trans "details" %}: </strong></p>
+			<p>{{ waybill.details | linebreaks }}</p>				
+		</div>
+		<div class="card-footer">	
+			<p><strong>{% trans "start" %}: </strong>{{ waybill.start | date:"d.m.Y H:i" }}</p>		
+			<p><strong>{% trans "finish" %}: </strong>{{ waybill.finish | date:"d.m.Y H:i" }}</p>		
+		</div>		
+	</div>
+	<br>
+	<div class="div-button-center">
+		<a class="btn btn-outline-info" style="width:120px" href="{% url 'waybill_index' %}">{% trans "Back" %}</a> 	
+	</div>	
+</div>
+{% endblock content %}

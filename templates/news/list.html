@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block title %}{% trans "newss" %}{% endblock title %}
+{% block header %}{% endblock header %}
+{% block content %}
+<div class="div-width-100-text-center">
+	<h3>{% trans "newss" %}</h3>
+</div>
+{% if news.count > 0 %}
+<div class="row">
+	<table id="myTable" style="width:100%">
+		<thead>
+			<tr>
+				<th></th>				
+			</tr>
+		</thead>
+		<tbody>
+			{% for n in news %}
+			<tr>
+				<td>
+					<div class="card">
+						<div class="card-header">
+							<!-- <h5>{{ n.title }}</h5> -->
+						</div>
+						<div class="card-body">					
+							<div class="row">
+								<div class="col-md-8">
+									<div class="accordion accordion-flush" >
+										<div class="accordion-item">
+											<div class="accordion-header" id="flush-heading{{ n.id }}">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{ n.id }}" aria-expanded="false" aria-controls="flush-collapse{{ n.id }}">
+													<h4>{{ n.title }}</h4>
+												</button>
+											</div>
+											<div id="flush-collapse{{ n.id }}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{ n.id }}" data-bs-parent="#accordionFlushExample">
+												<div class="accordion-body">
+													{{ n.details | linebreaks  }}
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>								
+								<div class="col-md-4">
+									{% if n.photo.url != None %}
+										<img style="width:100%; max-width:400px;" src="{{ n.photo.url}}" alt="{{ n.photo.url }}">
+									{% endif %}
+								</div>
+							</div>
+						</div>
+						<div class="card-footer text-muted">
+							<p><strong>{{ n.daten | date:"d.m.Y H:i" }}</strong><p>
+						</div>
+					</div>
+				</td>	
+			</tr>
+			{% endfor %}	
+		</tbody>
+	</table>	
+</div>
+{% endif %}
+{% endblock content %}
+
